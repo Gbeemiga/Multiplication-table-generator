@@ -1,0 +1,94 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+</head>
+<body>
+
+    <div class="cover">
+        <table id="single">
+            <thead id="head">
+    
+            </thead>
+            <tbody id="body">
+                
+            </tbody>
+        </table>
+    </div>
+    
+    <style>
+        body .cover {
+            display: flex;
+            background-color: hsla(0, 0%, 0%, 70%);
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        body table {
+            width: 70vw;
+            margin-top: 2rem; 
+            filter: drop-shadow(0 0 0.25rem grey);           
+        }
+
+        table, thead, td {
+            color: aliceblue;
+            border-collapse: collapse;
+            padding: 10px;
+            border-radius: 8px;
+            font-family: 'montserrat';
+        }
+
+        table thead {
+            padding: 10px;
+            text-align: center;
+            font-weight: 900;
+            background-color: dodgerblue;
+        }
+        
+        td {
+            height: 2rem;
+            padding: 10px;
+            text-align: center;
+            display: flex;
+            align-items: center; 
+            justify-content: center; 
+            font-size: 1.2rem;
+            font-weight: 500;
+            background-color: dimgrey;      
+            box-shadow: inset 0 0 5px black ;
+         }
+         td:nth-child(1) {
+            margin-top: .7rem;
+         }
+
+         td:nth-of-type(even) {
+             background-color: slategray;
+         }
+
+         table tbody td:hover {
+             background-color: darkslategray;
+             color: azure;
+             box-shadow: inset 0 0 15px black ;
+            }
+            
+        body #single #head {
+             color: azure;
+             font-size: 2rem;
+             background-color: transparent;
+         }
+
+         #body td {
+             display: flex;
+             flex-direction: column;
+         }
+
+
+    </style>
+    
+
+    <script src="./app.js"></script>
+</body>
+</html>
